@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesibility</title>
+</head>
+<body>
+    <a href="#main-content">Skip to main content</a>
+
+  <header>
+    <h1>College Portal</h1>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" aria-labelledby="home-heading">
+      <h2 id="home-heading">Welcome</h2>
+      <p>Find information about college courses and services.</p>
+
+      <img
+        src="college-campus.jpg"
+        alt="Students walking on the college campus">
+    </section>
+
+    <section id="courses" aria-labelledby="courses-heading">
+      <h2 id="courses-heading">Courses</h2>
+      <p>Explore the courses available this year.</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>Email the college office for more information.</p>
+      <a href="mailto:office@example.com" aria-label="Email the college office">
+        office@example.com
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 College Portal</p>
+  </footer>
+    
+</body>
+</html>
